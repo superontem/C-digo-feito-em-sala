@@ -84,7 +84,7 @@ app.get('/', (req, res) => {
 conn.sync().then(() => {
     app.listen(PORT, hostname, () => {
         console.log(`Servidor rodando em ${hostname}:${PORT}`)
-    }) 
+    })  
 }).catch((err) => {
     console.error("Erro de conexão com o banco de dados!", err)
 })
